@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="./styles.css" alt="stylesheet">
+    <title>Web Solutions Project</title>
+</head>
+<body class="bg-black text-white font-sans scroll-pt-24 scroll-pt-24 scroll-smooth" >
+
+  <!-- Navbar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 backdrop-blur-md shadow-lg" style="position: fixed;
+">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+  
+      <!-- Logo -->
+      <div class="text-2xl font-bold"><img src="./Logo.svg" alt="Business Logo" width="200"></div>
+  
+      <!-- Desktop Menu -->
+      <ul class="hidden md:flex space-x-6 text-sm uppercase">
+        <li><a href="#about" class="hover:text-gray-400 text-lg
+            " style="color: #FEE2E2;">About</a></li>
+        <li><a href="#services" class="hover:text-gray-400 text-lg
+            " style="color: #FEE2E2;">Services</a></li>
+        <li><a href="#offers" class="hover:text-gray-400 text-lg
+            " style="color: #FEE2E2;">Why</a></li>
+        <li><a href="#contact" class="hover:text-gray-400 text-lg
+            " style="color: #FEE2E2;">Contact</a></li>
+      </ul>
+  
+      <!-- Mobile Toggle Button -->
+      <button id="menu-btn" class="md:hidden focus:outline-none" title="Open Menu">
+        <svg id="menu-icon" class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2"
+          viewBox="0 0 24 24" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Slide-out Drawer (from Top) -->
+  <div id="drawer" class="fixed top-0 left-0 w-full bg-black transform -translate-y-full transition-transform duration-300 ease-in-out z-50 pb-100px" style="padding-bottom: 50px;">
+    <div class="flex justify-end p-4">
+      <button id="close-btn" class="text-white text-3xl">×</button>
+    </div>
+    <div class="flex justify-center items-center h-full">
+      <ul class="space-y-6 text-3xl uppercase text-center">
+        <li><a href="#about" class="hover:text-gray-400">About</a></li>
+        <li><a href="#services" class="hover:text-gray-400">Services</a></li>
+        <li><a href="#offers" class="hover:text-gray-400">Why</a></li>
+        <li><a href="#contact" class="hover:text-gray-400">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  
+
+  
+  <!-- Hero Section -->
+  <section id="hero" class="h-screen scroll-mt-24 flex items-center justify-center pt-24 px-4 md:px-8 bg-gradient-to-r from-blue-600 to-purple-800 flex text-white px-4 pt-100px" style="margin-top: 300px;">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        
+              <!-- Content -->
+                <div class="relative z-10 max-w-4xl mx-auto">
+                    <!-- Logo -->
+                    <img src="./Logo.svg" alt="Waidon Web Logo" class="mb-6 w-40 mx-auto" />
+
+                    <!-- Tagline -->
+                    <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">Empowering Your Business with Modern Web Solutions</h1>
+
+                    <!-- Sub-Tagline -->
+                    <p class="text-xl mb-6" style="color: #FEE2E2;">We bridge the digital divide by helping businesses establish their online presence with responsive and affordable websites.</p>
+
+                    <!-- Call to Action Button -->
+                    <a href="./form.html" class="bg-blue-600 py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300" style="color: #F97316;">
+                    Get Started
+                    </a>
+                </div>
+
+
+            <!-- Lottie Animation -->
+            <div class="w-full h-[300px] md:h-[400px] bg-gray-800 rounded-2xl flex items-center justify-center">
+            <!-- Hero graphic area-->
+            <lottie-player
+                src="https://assets9.lottiefiles.com/packages/lf20_Cc8Bpg.json"
+                background="transparent"
+                speed="1"
+                loop
+                autoplay
+                class="w-full h-full max-h-[400px]"
+            ></lottie-player>      
+            </div>
+
+    </div>
+  </section>
+
+  <!--About Section-->
+  <section id="about" class="py-16 scroll-mt-40 px-4 bg-black text-white bg-gradient-to-r from-midnightPurple via-sunsetOrange to-softPeach p-6 text-white" style="margin-top: 80px;">
+    <div class="max-w-7xl mx-auto text-center">
+      <h2 class="text-3xl font-bold mb-6" style="color: #F97316;">About Us</h2>
+      <p class="text-xl mb-6" style="color: #F97316;">
+        As a front-end web developer from South Africa, I've seen first-hand how many businesses lack an online presence. This absence restricts their access to various markets and limits their growth potential.
+      </p>
+      <p class="text-xl mb-6" style="color: #F97316;">
+        With the challenges we face due to limited technological infrastructure, I am driven to empower businesses by developing and implementing tailored web solutions. My mission is to bridge this gap and enable companies to thrive in the digital era.
+      </p>
+      <p class="text-xl" style="color: #F97316;">
+        Whether you're a small business or a startup, I am here to provide you with affordable and modern web solutions that will connect you to a world of opportunity and growth.
+      </p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+<section id="services" class="py-16 px-4 bg-black text-white scroll-mt-28" style="margin-top: 80px;">
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-12" style="color: #FEE2E2;">What We Offer</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+      
+      <!-- Service 1: Simple Designs -->
+      <div class="bg-gradient-to-r from-blue-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4" style="color: #FEE2E2;">Simple Designs</h3>
+        <p class="text-lg">I create simple, aesthetically pleasing designs that focus on usability and functionality. Clean and intuitive layouts are key to engaging users.</p>
+      </div>
+
+      <!-- Service 2: Clean and Modern -->
+      <div class="bg-gradient-to-r from-blue-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4" style="color: #FEE2E2;">Clean and Modern</h3>
+        <p class="text-lg">My designs embrace modern design principles, ensuring your website looks professional and is on trend. Every element is purposefully crafted.</p>
+      </div>
+
+      <!-- Service 3: Responsive -->
+      <div class="bg-gradient-to-r from-blue-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4" style="color: #FEE2E2;">Responsive</h3>
+        <p class="text-lg">I ensure that your website looks great and functions well on all devices, from mobile phones to desktop computers, offering a seamless user experience.</p>
+      </div>
+
+      <!-- Service 4: Easy to Navigate -->
+      <div class="bg-gradient-to-r from-blue-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4" style="color: #FEE2E2;">Easy to Navigate</h3>
+        <p class="text-lg">User experience is crucial. I focus on making navigation as smooth and intuitive as possible, so visitors can find what they need quickly.</p>
+      </div>
+
+      <!-- Service 5: Affordable -->
+      <div class="bg-gradient-to-r from-blue-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4" style="color: #FEE2E2;">Affordable</h3>
+        <p class="text-lg">Quality web design doesn't have to break the bank. I offer affordable solutions tailored to your needs, without compromising on quality.</p>
+      </div>
+
+      <!-- Service 5: Management -->
+      <div class="bg-gradient-to-r from-blue-600 to-purple-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition duration-300">
+        <h3 class="text-2xl font-semibold mb-4" style="color: #FEE2E2;">Affordable</h3>
+        <p class="text-lg">Quality web design doesn't have to break the bank. I offer affordable solutions tailored to your needs, without compromising on quality.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Offers Section -->
+
+<section id="offers" class="py-16 px-4 bg-black text-white scroll-mt-28" style="margin-top: 80px;"> 
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-6" style="color:#F97316;">Why Choose Us?</h2>
+    <p class="text-lg mb-10" style="color: #FEE2E2;">We're passionate about helping South African businesses go digital — affordably, professionally, and with style. Here’s what sets us apart:</p>
+
+    <div class="grid md:grid-cols-2 gap-8 text-left">
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2" style="color: #FEE2E2;">Personal Touch</h3>
+        <p>We work closely with each client to understand their brand, audience, and goals before creating anything.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2" style="color: #FEE2E2;">Affordable Pricing</h3>
+        <p>We offer flexible pricing for small businesses and startups who need a website without breaking the bank.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2" style="color: #FEE2E2;">Responsive by Default</h3>
+        <p>All websites are mobile-ready and look beautiful on phones, tablets, and desktops.</p>
+      </div>
+      <div class="bg-gray-800 p-6 rounded-lg">
+        <h3 class="text-xl font-semibold mb-2" style="color: #FEE2E2;">No Tech Headaches</h3>
+        <p>You won’t need to worry about domain setup, hosting, or updates — We've got you covered.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="py-16 bg-gray-800 text-white bg-gradient-to-r from-blue-600 to-purple-800 scroll-mt-24" style="margin-top: 80px;">
+  
+  <div class="max-w-7xl mx-auto text-center">
+    <h2 class="text-3xl font-bold mb-8" style="color: #FEE2E2;">Get in Touch</h2>
+    <p class="text-lg mb-12" style="color: #FEE2E2;">Have a project in mind? Let’s bring your ideas to life. Request a quote or simply reach out with any questions.</p>
+
+    <!-- Contact Form Container -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <!-- Left Section: Contact Form -->
+      <div class="bg-gray-900 p-8 rounded-lg shadow-xl">
+        <h3 class="text-2xl font-semibold mb-6">Request a Quote</h3>
+        
+        <form action="#" method="POST" class="space-y-4">
+          <!-- Name Input -->
+          <div>
+            <label for="name" class="block text-sm" style="font-size: 20px;" style="color: #FEE2E2;">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" class="w-full px-4 py-2 mt-2 bg-gray-700 border border-transparent rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" required />
+          </div>
+          
+          <!-- Email Input -->
+          <div>
+            <label for="email" class="block text-sm" style="font-size: 20px;" style="color: #FEE2E2;">Your Email</label>
+            <input  type="email" id="email" name="email" placeholder="Enter your email address" class="w-full px-4 py-2 mt-2 bg-gray-700 border border-transparent rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" required />
+          </div>
+          
+          <!-- Message Input -->
+          <div>
+            <label for="message" class="block text-sm" style="font-size: 20px;" style="color: #FEE2E2;">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your project" class="w-full px-4 py-2 mt-2 bg-gray-700 border border-transparent rounded-md text-white focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50" required></textarea>
+          </div>
+
+          <!-- Submit Button -->
+          <button type="submit" class="bg-blue-600 py-3 px-6 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300 w-full">
+            Get My Quote
+          </button>
+        </form>
+      </div>
+
+      <!-- Right Section: Contact Info -->
+      <div class="bg-gray-900 p-8 rounded-lg shadow-xl flex flex-col justify-between">
+        <h3 class="text-2xl font-semibold mb-6">Contact Info</h3>
+        <p class="text-lg mb-6" style="color: #FEE2E2; font-size: 20px;">Feel free to reach out via any of the following methods:</p>
+        <div class="space-y-4">
+          <!-- Phone Number -->
+          <div class="flex items-center space-x-4">
+            <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 4v16h18V4H3z"></path>
+            </svg>
+            <p class="text-lg">+27 123 456 789</p>
+          </div>
+
+          <!-- Email -->
+          <div class="flex items-center space-x-4">
+            <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 12l-10 6-10-6"></path>
+              <path d="M22 12l-10-6-10 6"></path>
+            </svg>
+            <a href="mailto:contact@waidonweb.com" class="text-lg hover:text-blue-400 transition duration-300">contact@waidonweb.com</a>
+          </div>
+
+          <!-- Instagram -->
+          <div class="flex items-center space-x-4">
+            <svg class="w-6 h-6 text-blue-600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path>
+              <path d="M12 7.47a4.53 4.53 0 1 1 0 9.06 4.53 4.53 0 0 1 0-9.06zm0 6a1.47 1.47 0 1 0 0-2.94 1.47 1.47 0 0 0 0 2.94z"></path>
+              <path d="M16.24 7.76a1.25 1.25 0 1 1-1.77-1.77 1.25 1.25 0 0 1 1.77 1.77z"></path>
+            </svg>
+            <a href="https://www.instagram.com/yourprofile" target="_blank" rel="noopener" class="text-lg hover:text-blue-400 transition duration-300">Instagram</a>
+          </div>
+
+          <!-- WhatsApp -->
+          <div class="flex items-center space-x-4">
+            <svg class="w-6 h-6 text-green-600" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4.6 2.6A9.7 9.7 0 0 0 2 12c0 1.7.5 3.3 1.4 4.7l-1.4 4.6 4.7-1.3A9.6 9.6 0 0 0 12 22c5.3 0 9.6-4.3 9.6-9.6S17.3 2 12 2a9.6 9.6 0 0 0-7.4 3.3l1.4 4.7a5.4 5.4 0 0 1 5.5-4.3c2.6 0 4.7 2.1 4.7 4.7a4.7 4.7 0 0 1-.3 1.8l3.5 3.5c1.3-2 2.1-4.5 2.1-7.4 0-5.3-4.3-9.6-9.6-9.6z"></path>
+            </svg>
+            <a href="https://wa.me/yourphonenumber" target="_blank" rel="noopener" class="text-lg hover:text-green-400 transition duration-300">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+
+<script>
+  const menuBtn = document.getElementById('menu-btn');
+  const drawer = document.getElementById('drawer');
+  const closeBtn = document.getElementById('close-btn');
+
+  document.querySelectorAll('#drawer a').forEach(link => {
+  link.addEventListener('click', () => {
+    drawer.classList.add('-translate-y-full'); // close drawer
+  });
+});
+
+  // Open the drawer
+  menuBtn.addEventListener('click', () => {
+    drawer.classList.toggle('-translate-y-full');
+  });
+
+  // Close the drawer
+  closeBtn.addEventListener('click', () => {
+    drawer.classList.add('-translate-y-full');
+    });
+
+    
+  </script>
+  
+
+</body>
+</html>
+
+      
+</body>
+</html>

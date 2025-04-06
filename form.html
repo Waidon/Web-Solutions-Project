@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Build Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-800 text-white">
+    <!-- Back Button -->
+<div class="text-left mb-6">
+    <button onclick="history.back()" class="inline-flex items-center bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 px-4 rounded-md transition duration-300">
+      <!-- Icon (optional) -->
+      <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+      </svg>
+      Back
+    </button>
+  </div>
+
+<!-- Form Section -->
+<section id="website-form" class="py-16 px-4 md:px-8">
+    <div class="max-w-7xl mx-auto text-center">
+        <h2 class="text-3xl font-bold mb-6">Build Your Website</h2>
+        <p class="text-xl mb-12">Please fill in the form below with the details of your website project. The more information you provide, the better we can meet your needs.</p>
+
+        <form action="#" method="POST" class="space-y-8">
+            <!-- Client Information -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold">Client Information</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label for="client-name" class="text-lg">Full Name</label>
+                        <input type="text" id="client-name" name="client-name" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="client-email" class="text-lg">Email Address</label>
+                        <input type="email" id="client-email" name="client-email" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label for="client-phone" class="text-lg">Phone Number</label>
+                    <input type="tel" id="client-phone" name="client-phone" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                </div>
+            </div>
+
+            <!-- Website Details -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold">Website Details</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label for="website-type" class="text-lg">Type of Website</label>
+                        <select id="website-type" name="website-type" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                            <option value="business">Business Website</option>
+                            <option value="ecommerce">E-commerce Website</option>
+                            <option value="portfolio">Portfolio Website</option>
+                            <option value="blog">Blog</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="space-y-2">
+                        <label for="website-goals" class="text-lg">Primary Goal of the Website</label>
+                        <input type="text" id="website-goals" name="website-goals" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label for="website-description" class="text-lg">Brief Description of the Website</label>
+                    <textarea id="website-description" name="website-description" rows="4" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none"></textarea>
+                </div>
+            </div>
+
+            <!-- Design Preferences -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold">Design Preferences</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label for="color-scheme" class="text-lg">Preferred Color Scheme</label>
+                        <input type="text" id="color-scheme" name="color-scheme" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="font-style" class="text-lg">Preferred Font Style</label>
+                        <input type="text" id="font-style" name="font-style" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                </div>
+                <div class="space-y-2">
+                    <label for="website-features" class="text-lg">Website Features</label>
+                    <textarea id="website-features" name="website-features" rows="4" class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none"></textarea>
+                    <p class="text-sm text-gray-400">Example: Blog, Contact Form, Gallery, E-commerce functionality</p>
+                </div>
+            </div>
+
+            <!-- Functionality -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold">Functionality</h3>
+                <div class="space-y-2">
+                    <label for="ecommerce" class="text-lg">Do you need e-commerce functionality?</label>
+                    <select id="ecommerce" name="ecommerce" class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="space-y-2">
+                    <label for="payment-gateway" class="text-lg">Preferred Payment Gateway (if applicable)</label>
+                    <input type="text" id="payment-gateway" name="payment-gateway" class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                </div>
+                <div class="space-y-2">
+                    <label for="social-media-integration" class="text-lg">Social Media Integration</label>
+                    <input type="text" id="social-media-integration" name="social-media-integration" class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    <p class="text-sm text-gray-400">Example: Instagram, Facebook, Twitter, etc.</p>
+                </div>
+            </div>
+
+            <!-- Budget and Timeline -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold">Budget and Timeline</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="space-y-2">
+                        <label for="budget" class="text-lg">What is your budget for the website?</label>
+                        <input type="text" id="budget" name="budget" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                    <div class="space-y-2">
+                        <label for="timeline" class="text-lg">What is your preferred timeline?</label>
+                        <input type="text" id="timeline" name="timeline" required class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Final Thoughts -->
+            <div class="space-y-4">
+                <h3 class="text-2xl font-semibold">Final Thoughts</h3>
+                <div class="space-y-2">
+                    <label for="additional-notes" class="text-lg">Any Additional Notes or Requests?</label>
+                    <textarea id="additional-notes" name="additional-notes" rows="4" class="w-full px-4 py-2 bg-gray-700 text-white rounded-md focus:outline-none"></textarea>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 px-6 rounded-full transition duration-300">
+                    Submit Request
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+</body>
+</html>
