@@ -51,10 +51,13 @@ section {
 #hero {
     margin-top: 300px;
     background-color: #ced4da;
+    background-image: url('./Hero\ Image.jpg');
+    background-size: cover;
 }
 
-#Sub-tagline {
-    color: #6c757d;
+#sub-tagline {
+    color: #f8f9fa;
+    font-size: 1.2rem;
     
 }
 
@@ -75,6 +78,7 @@ section {
     background-color: #343a40;
     color: #e9ecef;
 }
+
 
 /* Services Section */
 #services {
@@ -98,8 +102,10 @@ section {
 #offers {
     margin-top: 80px;
     background-color: #495057;
-    
     margin: 30px;
+    background-image: url('./Offer\ Image.jpg');
+    background-size: cover;
+    color: #e9ecef;
 }
 
 #offer-container {
@@ -108,78 +114,63 @@ section {
     padding: 30px;
 }
 
-#offer-headef {
+#offer-header {
     color: #ced4da;
 }
 
 #sub-text-offer {
     color: #ced4da;
+    font-size: 1.2rem;
 }
 
-#offer-card{
+.offer-card{
     margin-bottom: 20px;
-    background-color: #495057;
+    background-color: #ced4da;
     padding: 20px;
+    color:#343a40;
     
 }
 
-
-/* Contact Section */
-#contact {
-    margin-top: 80px;
-    background-color: #e9ecef;
-    padding: 10px;
+.sub-text-offer {
+    color:#343a40;
+    font-size: 1.2rem;
 }
+
+
+/* Footer Section */
+
+/* Conact Section */
 
 #contact-header {
-    color: #495057;
-    font-size: 2rem;
+    color: #343a40;
+    text-align: center;
+    padding-top: 150px;
 }
 
-#sub-text-contact {
-    color: #6c757d;
-    font-size: 1.2rem;
-    padding: 5px;
-    font-weight: 500;
-}
-
-#contact-form-container {
+#contact {
+    margin-top: 80px;
     background-color: #343a40;
     color: #e9ecef;
-    
 }
 
-#request-header {
-    color:  #dee2e6;
-    font-size: 1.8rem;
+/* TailwindCSS Custom Animation */
 
-}
+  @keyframes fade-in-up {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
 
-#name-input {
-    color: #f8f9fa;
-    font-size: 1.2rem;
-}
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 
-#quote-button {
-   background-color: #e9ecef;
-   color: #343a40;
-}
+  .animate-fade-in-up {
+    animation: fade-in-up 0.8s ease-out both;
+  }
 
-#quote-button:hover {
-    background-color: #6c757d;
-    color: #f8f9fa;
-    transition: all 0.3s ease-in-out;
-}
-
-#contact-text {
-    color:  #dee2e6;
-    font-size: 1.8rem;
-
-}
-
-.contact-info {
-    color: #f8f9fa;
-    font-size: 1.2rem;
-    
-    
-}
+  .delay-200 {
+    animation-delay: 0.2s;
+  }
