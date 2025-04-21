@@ -62,7 +62,8 @@ section {
 }
 
 #Get-started-button {
-    background-color: #343a40;
+    background-color: #ced4da;
+    color:#343a40;
 }
 
 #Get-started-button:hover {
@@ -101,9 +102,9 @@ section {
 
 #offers {
     margin-top: 80px;
-    background-color: #495057;
     margin: 30px;
     background-image: url('./Offer\ Image.jpg');
+    background-color: rgba(17, 17, 17, 2.8);
     background-size: cover;
     color: #e9ecef;
 }
@@ -137,9 +138,9 @@ section {
 }
 
 
-/* Footer Section */
 
-/* Conact Section */
+
+/* Contact Section */
 
 #contact-header {
     color: #343a40;
@@ -173,4 +174,14 @@ section {
 
   .delay-200 {
     animation-delay: 0.2s;
+  }
+
+  /* Footer Section */
+
+  #footer {
+    background-color: #343a40;
+    color: #e9ecef;
+    padding: 20px;
+    text-align: center;
+    position: relative; 
   }
