@@ -15,7 +15,7 @@
     <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
   
       <!-- Logo -->
-      <div class="text-2xl font-bold"><img src="./Logo.svg" alt="Business Logo" width="200"></div>
+      <div class="Logo text-2xl font-bold"><img src="./Logo.svg" alt="Business Logo" class="w-60 sm:w-20 md:w-40" ></div>
   
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 text-sm uppercase">
@@ -53,13 +53,13 @@
 
   
  <!-- Hero Section -->
-<section id="hero" class="h-screen scroll-mt-24 flex items-center justify-center pt-[100px] px-4 md:px-8 bg-gradient-to-r text-white">
+<section id="hero" class="h-screen scroll-mt-24 flex items-center justify-center pt-[100px] px-4 md:px-8 bg-gradient-to-r from-black via-gray-900 to-blue-900 text-white">
   <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
     
     <!-- Content -->
     <div class="relative z-10 max-w-4xl mx-auto text-center md:text-left">
       <!-- Logo -->
-      <img src="./Logo.svg" alt="Waidon Web Logo" class="mb-6 w-40 mx-auto md:mx text-center" />
+      <img src="./Logo.svg" alt="Waidon Web Logo" class="Logo mb-6 w-40 mx-auto md:mx text-center w-60 sm:w-20 md:w-40"/>
 
       <!-- Tagline -->
       <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4">
@@ -68,27 +68,40 @@
 
       <!-- Sub-Tagline -->
       <p class="text-xl mb-6" id="sub-tagline">
-        We bridge the digital divide by helping businesses establish their online presence with responsive and affordable websites.
+       <span= class="typing-text">We bridge the digital divide by helping businesses establish their online presence with responsive and affordable websites.
       </p>
+    </span> 
 
       <!-- Call to Action Button -->
       <a href="./form.html" class=" py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300" id="Get-started-button">
         Get Started
       </a>
     </div>
+   <!-- Icon Carousel Container -->
+      <div class="overflow-hidden w-full max-w-md mx-auto w-16 h-16 hover:scale-110 transition-transform duration-300">
+        <div class="flex gap-6 animate-scroll">
+          <img src="./Icons/html5.svg" alt="HTML" class="w-16 h-16" />
+          <img src="./Icons/css.svg" alt="CSS" class="w-16 h-16" />
+          <img src="./Icons/javascript.svg" alt="JS" class="w-16 h-16" />
+          <img src="./Icons/tailwindcss.svg" alt="Tailwind" class="w-16 h-16" />
+          <img src="./Icons/react.svg" alt="React" class="w-16 h-16" />
+          <img src="./Icons/github.svg" alt="GitHub" class="w-16 h-16" />
 
-    <!-- Lottie Animation -->
-    <div class="w-full h-[300px] md:h-[400px] rounded-2xl flex items-center justify-center">
-      <lottie-player
-      src="https://assets2.lottiefiles.com/packages/lf20_49rdyysj.json"
-        background="transparent"
-        speed="1"
-        loop
-        autoplay
-        class="w-full h-full max-h-[400px]"
-      ></lottie-player>
-    </div>
+          <!-- Repeat icons for seamless scroll -->
+          <img src="./Icons/html5.svg" alt="HTML" class="w-16 h-16" />
+          <img src="./Icons/css.svg" alt="CSS" class="w-16 h-16" />
+          <img src="./Icons/javascript.svg" alt="JS" class="w-16 h-16" />
+          <img src="./Icons/tailwindcss.svg" alt="Tailwind" class="w-16 h-16" />
+          <img src="./Icons/react.svg" alt="React" class="w-16 h-16" />
+          <img src="./Icons/github.svg" alt="GitHub" class="w-16 h-16" />
+        </div>
+      </div>
 
+
+    
+    
+
+  
   </div>
 </section>
 
@@ -382,10 +395,40 @@
   closeBtn.addEventListener('click', () => {
     drawer.classList.add('-translate-y-full');
     });
+ //Text script
+ const textArray = [
+    "Affordable websites for growing businesses.",
+    "Mobile-friendly, fast, and modern.",
+    "Start your digital journey with us today."
+  ];
+  let i = 0, j = 0, currentText = '', isDeleting = false;
+  const el = document.querySelector('.typing-text');
 
+  function type() {
+    if (i < textArray.length) {
+      if (!isDeleting && j <= textArray[i].length) {
+        currentText = textArray[i].substring(0, j++);
+        el.textContent = currentText;
+      } else if (isDeleting && j >= 0) {
+        currentText = textArray[i].substring(0, j--);
+        el.textContent = currentText;
+      }
+
+      if (j === textArray[i].length + 1) isDeleting = true;
+      if (isDeleting && j === 0) {
+        isDeleting = false;
+        i = (i + 1) % textArray.length;
+      }
+
+      setTimeout(type, isDeleting ? 50 : 100);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
     
   </script>
   
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
 </body>
 </html>

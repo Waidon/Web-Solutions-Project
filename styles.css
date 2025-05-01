@@ -51,7 +51,7 @@ section {
 #hero {
     margin-top: 300px;
     background-color: #ced4da;
-    background-image: url('./Hero\ Image.jpg');
+    
     background-size: cover;
 }
 
@@ -70,7 +70,18 @@ section {
     background-color: #6c757d;
     color: #f8f9fa;
 }
-
+/*Icons */
+@keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  .animate-scroll {
+    animation: scroll 15s linear infinite;
+  }
 
 /* About Section */
 
@@ -184,4 +195,11 @@ section {
     padding: 20px;
     text-align: center;
     position: relative; 
+  }
+
+  @media screen and (max-width: 480px) {
+    .Logo {
+      width: 150px; /* Adjust as needed */
+      height: auto; /* Keeps the aspect ratio */
+    }
   }
