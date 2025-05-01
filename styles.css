@@ -47,6 +47,16 @@ section {
     transition: all 0.3s ease-in-out;
 }
 
+#menu-btn {
+    background-color: #343a40;
+    opacity: 0.5;
+}
+
+#close-btn {
+    color: #e9ecef;
+    
+}
+
 
 /*Hero Section */
 #hero {
@@ -83,10 +93,6 @@ section {
     animation: scroll 15s linear infinite;
   }
 
-  .icons {
-     color:#403634;
-  }
-
 
 /* About Section */
 
@@ -119,8 +125,7 @@ section {
 #offers {
     margin-top: 80px;
     margin: 30px;
-    background-image: url('./Offer\ Image.jpg');
-    background-color: rgba(17, 17, 17, 2.8);
+    background-color: #495057;
     background-size: cover;
     color: #e9ecef;
 }
