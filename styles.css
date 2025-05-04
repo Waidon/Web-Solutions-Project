@@ -125,7 +125,7 @@ section {
 #offers {
     margin-top: 80px;
     margin: 30px;
-    background-color: #495057;
+    background-color: #343a40;
     background-size: cover;
     color: #e9ecef;
 }
@@ -137,11 +137,11 @@ section {
 }
 
 #offer-header {
-    color: #ced4da;
+    color: #e9ecef;
 }
 
 #sub-text-offer {
-    color: #ced4da;
+    color: #e9ecef;
     font-size: 1.2rem;
 }
 
