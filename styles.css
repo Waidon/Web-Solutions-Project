@@ -74,7 +74,11 @@ section {
 #Get-started-button {
     background-color: #343a40;
     color:#ced4da;
+    border-radius: 8px;
+    margin: 0 auto;
+
 }
+
 
 #Get-started-button:hover {
     background-color: #6c757d;
@@ -102,6 +106,23 @@ section {
     color: #e9ecef;
 }
 
+#about-image {
+    transition: transform 0.3s ease-in-out;
+}
+
+#about-image:hover {
+    transform: scale(1.5); /* Image grows by 1.5x when hovered */
+
+}
+
+.parallax {
+    background-image: url("https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzNjUyOXwwfDF8c2VhcmNofDJ8fGJsdXUlMjBzdGFpciUyMGltYWdlfGVufDB8fHx8MTY5MDQ1NTY3Ng&ixlib=rb-1.2.1&q=80&w=1080");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+  }
+  
+
 
 /* Services Section */
 #services {
@@ -116,7 +137,7 @@ section {
 }
 
 #service-card {
-    background-color: #6c757d;
+    background-color: #343a40;
     color: #e9ecef;
 }
 
@@ -146,10 +167,7 @@ section {
 }
 
 .offer-card{
-    margin-bottom: 20px;
-    background-color: #ced4da;
-    padding: 20px;
-    color:#343a40;
+   background-color:#e9ecef;
     
 }
 
@@ -158,6 +176,9 @@ section {
     font-size: 1.2rem;
 }
 
+.icon-offer {
+   background-color: #343a40;
+}
 
 
 

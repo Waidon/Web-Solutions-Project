@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./styles.css" alt="stylesheet">
     <title>Web Solutions Project</title>
 </head>
-<body class="text-white font-sans scroll-pt-24 scroll-pt-24 scroll-smooth" >
+<body class="text-white font-sans scroll-pt-24 scroll-pt-24 scroll-smooth" id="home">
 
   <!-- Navbar -->
 <nav class="fixed top-0 left-0 w-full z-50 bg-black bg-opacity-90 backdrop-blur-md shadow-lg bg-gradient-to-r from-blue-600 via-purple-600 to-pink-600" id="navbar">
@@ -19,6 +19,7 @@
   
       <!-- Desktop Menu -->
       <ul class="hidden md:flex space-x-6 text-sm uppercase">
+        <li><a href="#home" class="hover:text-gray-400 text-lg nav-links">Home</a></li>
         <li><a href="#about" class="hover:text-gray-400 text-lg nav-links">About</a></li>
         <li><a href="#services" class="hover:text-gray-400 text-lg nav-links">Services</a></li>
         <li><a href="#offers" class="hover:text-gray-400 text-lg nav-links">Why Us</a></li>
@@ -42,6 +43,7 @@
     </div>
     <div class="flex justify-center items-center h-full">
       <ul class="space-y-6 text-3xl uppercase text-center">
+        <li><a href="#home" class="hover:text-gray-400 mobile-nav">Home</a></li>
         <li><a href="#about" class="hover:text-gray-400 mobile-nav">About</a></li>
         <li><a href="#services" class="hover:text-gray-400 mobile-nav">Services</a></li>
         <li><a href="#offers" class="hover:text-gray-400 mobile-nav">Why Us</a></li>
@@ -73,7 +75,7 @@
     </span> 
 
       <!-- Call to Action Button -->
-      <a href="./form.html" class=" py-3 px-8 rounded-full text-lg font-semibold hover:bg-blue-700 transition duration-300" id="Get-started-button">
+      <a href="./form.html" class=" py-3 px-8 rounded-full text-lg font-semibold transition duration-300" id="Get-started-button">
         Get Started
       </a>
     </div>
@@ -110,9 +112,9 @@
   <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
     
     <!-- Image/Visual Side -->
-    <div class="relative w-full h-auto">
+    <div class="relative w-full h-auto" >
       <img src="./About Us Image.jpg" alt="Helping businesses go online" 
-           class="rounded-xl shadow-lg w-full h-auto object-cover" />
+           class="rounded-xl shadow-lg w-full h-auto object-cover " />
       <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-20 rounded-xl pointer-events-none"></div>
     </div>
 
@@ -130,7 +132,7 @@
       </p>
 
       <div class="flex items-center space-x-4 mt-4">
-        <img src="./Black Gold Dynamic Business Circle Profile Image.png" alt="Founder" 
+        <img src="./Black Gold Dynamic Business Circle Profile Image.png" alt="Founder" id="about-image" 
              class="w-16 h-16 rounded-full border-2 border-white" />
         <div>
           <p class="font-semibold text-lg">Waidon Cloete</p>
@@ -214,17 +216,17 @@
         
       
         <!-- Block 2 -->
-        <div class="bg-gray-400 text-white p-10 text-center">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/price-tag-usd.png" alt="Affordable Pricing" class="w-10 h-10">
-          <h3 class="text-xl font-semibold">Affordable Pricing</h3>
+        <div class=" p-10 text-center offer-card">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/price-tag-usd.png" alt="Affordable Pricing" class="w-10 h-10 icon-offer">
+          <h3 class="text-xl font-semibold sub-text-offer">Affordable Pricing</h3>
           <p class="sub-text-offer">We offer flexible pricing for small businesses and startups who need a website without breaking the bank.</p>
       
         </div>
       
         <!-- Block 3 -->
-        <div class="bg-gray-400 text-white p-10 text-center">
-          <img src="https://img.icons8.com/ios-filled/50/ffffff/monitor--v1.png" alt="Responsive Design" class="w-10 h-10">
-          <h3 class="text-xl font-semibold">Responsive by Default</h3>
+        <div class=" p-10 text-center offer-card">
+          <img src="https://img.icons8.com/ios-filled/50/ffffff/monitor--v1.png" alt="Responsive Design" class="w-10 h-10 icon-offer">
+          <h3 class="text-xl font-semibold sub-text-offer">Responsive by Default</h3>
           <p class="sub-text-offer">All websites are mobile-ready and look beautiful on phones, tablets, and desktops.</p>
         </div>
       
@@ -345,6 +347,7 @@
     <div class="text-center">
       <h3 class="text-lg font-semibold mb-3">Quick Links</h3>
       <ul class="space-y-2 text-gray-300">
+        <li><a href="#home" class="hover:text-blue-400 transition">Home</a></li>
         <li><a href="#about" class="hover:text-blue-400 transition">About</a></li>
         <li><a href="#services" class="hover:text-blue-400 transition">Services</a></li>
         <li><a href="#contact" class="hover:text-blue-400 transition">Contact</a></li>
